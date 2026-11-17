@@ -13,7 +13,12 @@
 #define MAX_ITEM_NAME_SIZE 56
 #define MAX_ITEM_TEXT_SIZE 512 // Half of the maximum in-game limit
 #define BOOK_NAME_SIZE_LIMIT 127 // TP & ID Tomes have a smaller limit for some reason
-#define ITEM_TEXT_SIZE_LIMIT 1023
+// These sizes describe D2Client-owned output buffers, not storage owned by BH.
+// Do not increase them until the corresponding native D2Client allocations and
+// every caller have been expanded and verified for the exact game build.
+#define ITEM_TOOLTIP_BUFFER_CAPACITY 1024
+#define ITEM_PROPERTY_BUFFER_CAPACITY 1024
+#define ITEM_TEXT_SIZE_LIMIT (ITEM_TOOLTIP_BUFFER_CAPACITY - 1)
 
 enum TextColor {
 	Disabled = -1,
