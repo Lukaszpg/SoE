@@ -1485,6 +1485,28 @@ bool ShouldShowIlvl(UnitItemInfo* uInfo)
 static UnitAny* lastItem;
 static DWORD previousFlags;
 
+// BH receives native D2Client buffers by pointer, without a size argument.
+// Never append partial lines or rely on a length clamp after the write.
+static bool AppendItemTextIfFits(wchar_t* destination, size_t capacity, const wchar_t* text)
+{
+    if (!destination || !text || capacity == 0)
+        return false;
+
+    size_t used = 0;
+    while (used < capacity && destination[used] != L'\0')
+        ++used;
+
+    if (used == capacity)
+        return false;
+
+    const size_t added = wcslen(text);
+    if (added >= capacity - used)
+        return false;
+
+    memcpy(destination + used, text, (added + 1) * sizeof(wchar_t));
+    return true;
+}
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -2028,14 +2050,10 @@ __declspec(dllexport)void __stdcall BHOnProperties(wchar_t* wTxt)
 
 			if (shouldShowDesc)
 			{
-				int aLen = wcslen(wTxt);
-				if (aLen < ITEM_TEXT_SIZE_LIMIT) {
-					swprintf_s(wTxt + aLen, ITEM_TEXT_SIZE_LIMIT - aLen,
-						L"%s%s\n",
-						desc.c_str(),
-						GetColorCode(TextColor::White).c_str()
-					);
-				}
+				std::wstring descriptionLine = desc;
+				descriptionLine += GetColorCode(TextColor::White);
+				descriptionLine += L"\n";
+				AppendItemTextIfFits(wTxt, ITEM_TOOLTIP_BUFFER_CAPACITY, descriptionLine.c_str());
 			}
 		}
 	}
@@ -2089,17 +2107,11 @@ __declspec(dllexport)void __stdcall BHOnProperties(wchar_t* wTxt)
 	{
 		// Add alvl
 		if (ilvl != alvl && (quality == ITEM_QUALITY_MAGIC || quality == ITEM_QUALITY_RARE || quality == ITEM_QUALITY_CRAFT)) {
-			int aLen = wcslen(wTxt);
-			if (aLen < ITEM_TEXT_SIZE_LIMIT && alvlLen < ITEM_TEXT_SIZE_LIMIT - aLen) {
-				swprintf_s(wTxt + aLen, ITEM_TEXT_SIZE_LIMIT - aLen, alvlString);
-			}
+			AppendItemTextIfFits(wTxt, ITEM_TOOLTIP_BUFFER_CAPACITY, alvlString);
 		}
 
 		// Add ilvl
-		int aLen = wcslen(wTxt);
-		if (aLen < ITEM_TEXT_SIZE_LIMIT && ilvlLen < ITEM_TEXT_SIZE_LIMIT - aLen) {
-			swprintf_s(wTxt + aLen, ITEM_TEXT_SIZE_LIMIT - aLen, ilvlString);
-		}
+		AppendItemTextIfFits(wTxt, ITEM_TOOLTIP_BUFFER_CAPACITY, ilvlString);
 	}
 }
 
@@ -2185,7 +2197,7 @@ __declspec(dllexport) BOOL __stdcall BHOnDamagePropertyBuild(UnitAny* pItem, Dam
 			szProp = D2LANG_GetLocaleText(D2STR_STRMODPOISONDAMAGERANGE);
 			swprintf_s(newDesc, 128, szProp, stat_min, stat_max, pDmgStats->nPsnLen / 25);
 		}
-		wcscat_s(wOut, 1024, newDesc);
+		AppendItemTextIfFits(wOut, ITEM_PROPERTY_BUFFER_CAPACITY, newDesc);
 		return TRUE;
 	}
 	else if (nStat == STAT_SECONDARYMAXIMUMDAMAGE) {
@@ -2238,8 +2250,9 @@ __declspec(dllexport) BOOL __stdcall BHOnDamagePropertyBuild(UnitAny* pItem, Dam
 
 	BHOnPropertyBuild(newDesc, nStat, pItem, 0);
 	// Beside this add-on the function is almost 1:1 copy of Blizzard's one -->
-	wcscat_s(wOut, 1024, newDesc);
-	wcscat_s(wOut, 1024, L"\n");
+	std::wstring propertyLine = newDesc;
+	propertyLine += L"\n";
+	AppendItemTextIfFits(wOut, ITEM_PROPERTY_BUFFER_CAPACITY, propertyLine.c_str());
 
 	return TRUE;
 }

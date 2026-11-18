@@ -1,0 +1,35 @@
+site,VA,RVA,original_bytes,purpose,patch_status
+parent_entry,0x102b43c0,0x2b43c0,55 8B EC,frame/capacity contract,unmodified — requires coordinated patch
+parent_frame_0x814,0x102b43c3,0x2b43c3,81 EC 14 08 00 00,frame/capacity contract,unmodified — requires coordinated patch
+cookie_initialize,0x102b43d0,0x2b43d0,89 45 FC,frame/capacity contract,unmodified — requires coordinated patch
+parent_capacity_0x400,0x102b440a,0x2b440a,68 00 04 00 00,frame/capacity contract,unmodified — requires coordinated patch
+parent_buffer_address,0x102b440f,0x2b440f,8D 85 F8 F7 FF FF,frame/capacity contract,unmodified — requires coordinated patch
+parent_calls_formatter,0x102b441c,0x2b441c,E8 2F 03 00 00,frame/capacity contract,unmodified — requires coordinated patch
+formatter_entry,0x102b4750,0x2b4750,55 8B EC,frame/capacity contract,unmodified — requires coordinated patch
+formatter_output_arg,0x102b4776,0x2b4776,8B 75 10,frame/capacity contract,unmodified — requires coordinated patch
+formatter_append_1,0x102b494d,0x2b494d,E8 DE EE 06 00,call site,unmodified — requires coordinated patch
+formatter_append_2,0x102b4aac,0x2b4aac,E8 7F ED 06 00,call site,unmodified — requires coordinated patch
+formatter_append_3,0x102b4ab7,0x2b4ab7,E8 74 ED 06 00,call site,unmodified — requires coordinated patch
+formatter_append_4,0x102b4aca,0x2b4aca,E8 61 ED 06 00,call site,unmodified — requires coordinated patch
+formatter_append_5,0x102b4b72,0x2b4b72,E8 B9 EC 06 00,call site,unmodified — requires coordinated patch
+formatter_append_6,0x102b4b7d,0x2b4b7d,E8 AE EC 06 00,call site,unmodified — requires coordinated patch
+formatter_append_7,0x102b4b8a,0x2b4b8a,E8 A1 EC 06 00,call site,unmodified — requires coordinated patch
+formatter_append_8,0x102b4b9b,0x2b4b9b,E8 90 EC 06 00,call site,unmodified — requires coordinated patch
+formatter_local_append,0x102b4a8f,0x2b4a8f,E8 9C ED 06 00,call site,unmodified — requires coordinated patch
+parent_append_1,0x102b44c5,0x2b44c5,E8 66 F3 06 00,call site,unmodified — requires coordinated patch
+parent_append_2,0x102b44d2,0x2b44d2,E8 59 F3 06 00,call site,unmodified — requires coordinated patch
+parent_append_3,0x102b44df,0x2b44df,E8 4C F3 06 00,call site,unmodified — requires coordinated patch
+parent_append_4,0x102b4515,0x2b4515,E8 16 F3 06 00,call site,unmodified — requires coordinated patch
+parent_append_5,0x102b4522,0x2b4522,E8 09 F3 06 00,call site,unmodified — requires coordinated patch
+parent_append_6,0x102b452f,0x2b452f,E8 FC F2 06 00,call site,unmodified — requires coordinated patch
+parent_append_7,0x102b454b,0x2b454b,E8 E0 F2 06 00,call site,unmodified — requires coordinated patch
+parent_append_8,0x102b4558,0x2b4558,E8 D3 F2 06 00,call site,unmodified — requires coordinated patch
+parent_append_9,0x102b4578,0x2b4578,E8 B3 F2 06 00,call site,unmodified — requires coordinated patch
+formatter_caller_512,0x102b1885,0x2b1885,E8 C6 2E 00 00,call site,unmodified — requires coordinated patch
+formatter_caller_1024,0x102f345d,0x2f345d,E8 EE 12 FC FF,call site,unmodified — requires coordinated patch
+formatter_thunk,0x103a4d7d,0x3a4d7d,E8 CE F9 F0 FF,call site,unmodified — requires coordinated patch
+parent_caller_1,0x102addeb,0x2addeb,E8 D0 65 00 00,call site,unmodified — requires coordinated patch
+parent_caller_2,0x102adec4,0x2adec4,E8 F7 64 00 00,call site,unmodified — requires coordinated patch
+parent_caller_3,0x102afeab,0x2afeab,E8 10 45 00 00,call site,unmodified — requires coordinated patch
+parent_caller_4,0x102b180a,0x2b180a,E8 B1 2B 00 00,call site,unmodified — requires coordinated patch
+parent_caller_5,0x102b3121,0x2b3121,E8 9A 12 00 00,call site,unmodified — requires coordinated patch

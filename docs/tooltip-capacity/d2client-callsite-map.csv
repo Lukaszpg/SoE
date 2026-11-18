@@ -1,0 +1,39 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: D2Client_Tooltip_Callsite_Map.csv>
+index,rva,preferred_va,original_first_bytes,stage,operation,target_capacity_utf16,breakpoint_predicate
+0,0x55CD5,0x6FB05CD5,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+1,0x55DFC,0x6FB05DFC,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+2,0x55E04,0x6FB05E04,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+3,0x55E1D,0x6FB05E1D,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+4,0x55ED2,0x6FB05ED2,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+5,0x55EDA,0x6FB05EDA,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+6,0x55EE0,0x6FB05EE0,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+7,0x55EF3,0x6FB05EF3,ff d7,formatter_output,Unicode::strcat,1024,dest_len+src_len>=1024
+8,0x93B1F,0x6FB43B1F,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+9,0x93B7D,0x6FB43B7D,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+10,0x93B85,0x6FB43B85,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+11,0x93B92,0x6FB43B92,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+12,0x9426F,0x6FB4426F,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+13,0x94285,0x6FB44285,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+14,0x9429B,0x6FB4429B,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+15,0x942B4,0x6FB442B4,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+16,0x942CD,0x6FB442CD,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+17,0x942E6,0x6FB442E6,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+18,0x942FF,0x6FB442FF,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+19,0x94315,0x6FB44315,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+20,0x9432B,0x6FB4432B,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+21,0x94341,0x6FB44341,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+22,0x94357,0x6FB44357,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+23,0x9436D,0x6FB4436D,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+24,0x94383,0x6FB44383,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+25,0x94399,0x6FB44399,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+26,0x943AF,0x6FB443AF,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+27,0x943C5,0x6FB443C5,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+28,0x943FE,0x6FB443FE,ff d3,main_assembled,Unicode::strcat,1024,dest_len+src_len>=1024
+29,0x944D5,0x6FB444D5,ff d3,popup_append,Unicode::strcat,1024,dest_len+src_len>=1024
+30,0x944E2,0x6FB444E2,ff d3,popup_append,Unicode::strcat,1024,dest_len+src_len>=1024
+31,0x941E7,0x6FB441E7,ff 15 b8 ea b7 6f,main_or_popup_copy,Unicode::strcpy,1024,src_len>=1024
+32,0x94431,0x6FB44431,ff 15 b8 ea b7 6f,main_or_popup_copy,Unicode::strcpy,1024,src_len>=1024
+33,0x94491,0x6FB44491,ff d6 b9 9d 08 00,main_or_popup_copy,Unicode::strcpy,1024,src_len>=1024
+34,0x944B3,0x6FB444B3,ff d6 b9 9c 08 00,main_or_popup_copy,Unicode::strcpy,1024,src_len>=1024
+35,0x944C8,0x6FB444C8,ff d6 8b 54 24 18,main_or_popup_copy,Unicode::strcpy,1024,src_len>=1024

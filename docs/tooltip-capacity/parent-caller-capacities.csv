@@ -1,0 +1,6 @@
+direct_call,owning_function,output_location,capacity_utf16,evidence,confidence
+0x102ADDEB,102ADD80,EBP-0x80C,1024,Local: 0x7FE-byte zeroing at 102ADD9F plus 2-byte terminator at 102ADDE4,Verified
+0x102ADEC4,102ADEA0,External pointer EBX = [EBP+0xC],512 or 1024,102ADEA0 <- 102ADF20 <- 102F34D1 (512 at ESP+0x540) or 102AE857 <- 102AE800 <- 102B2B8E (1024 at ESP+0x5848),Verified for direct paths; indirect ref analysis outstanding
+0x102AFEAB,102AFD90,EBP-0x604,256,102AFDA3 zeros 0x200 bytes; adjacent local starts at EBP-0x404,Verified
+0x102B180A,102B0D70,EBP-0x3E88,1024,"102B0F12/18 zeros remaining 0x7FE bytes, and preceding 2-byte initialization; adjacent object at EBP-0x3688",Verified
+0x102B3121,large UI description,ESP+0x6048,4096,102B2261/68 zeros 0x2000 bytes at same stable ESP-relative address,Verified

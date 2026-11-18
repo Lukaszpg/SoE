@@ -1,0 +1,32 @@
+evidence,module,VA,bytes_verified
+parent buffer start,PD,0x102b440f,8D 85 F8 F7 FF FF
+parent formatter call,PD,0x102b441c,E8 2F 03 00 00
+formatter output cap candidate,PD,0x102b4776,8B 75 10
+confirmed overflow append,PD,0x102b4aca,E8 61 ED 06 00
+"caller 1 initialization, remaining bytes",PD,0x102add9f,68 FE 07 00 00
+caller 1 local output,PD,0x102addda,8D 8D F4 F7 FF FF
+caller 1 parent call,PD,0x102addeb,E8 D0 65 00 00
+caller 2 external output parent call,PD,0x102adec4,E8 F7 64 00 00
+caller 3 local output memset size,PD,0x102afda3,68 00 02 00 00
+caller 3 local output,PD,0x102afe9f,8D 8D FC F9 FF FF
+caller 3 parent call,PD,0x102afeab,E8 10 45 00 00
+caller 4 native buffer remaining bytes,PD,0x102b0f18,68 FE 07 00 00
+caller 4 parent call,PD,0x102b180a,E8 B1 2B 00 00
+caller 5 local output,PD,0x102b2261,8D 84 24 48 60 00 00
+caller 5 local memset size,PD,0x102b2268,68 00 20 00 00
+caller 5 parent call,PD,0x102b3121,E8 9A 12 00 00
+external path local 1024 output,PD,0x102b2233,8D 84 24 48 58 00 00
+external path local 1024 memset,PD,0x102b223a,68 00 08 00 00
+external path call 102AE800,PD,0x102b2b8e,E8 6D BC FF FF
+external path call 102ADF20,PD,0x102ae857,E8 C4 F6 FF FF
+external path 512 output memset,PD,0x102f3418,68 00 04 00 00
+external path 512 nested call,PD,0x102f34d1,E8 4A AA FB FF
+formatter thunk,PD,0x103a4d7d,E8 CE F9 F0 FF
+BH property build call,PD,0x102c4a11,FF D0
+BH dynamic load DLL,PD,0x102c4776,68 58 70 44 10
+patched D2Client callback operand 1,PD,0x101212e9,C7 05 70 71 4A 10 60 4D 3A 10
+patched D2Client callback operand 2,PD,0x1012131b,C7 05 84 71 4A 10 60 4D 3A 10
+patched D2Client callback operand 3,PD,0x1012134d,C7 05 98 71 4A 10 60 4D 3A 10
+D2Client 0x55f9c is CALL operand,CLIENT,0x6fb05f9b,E8 80 FB FF FF
+D2Client 0x56038 is CALL operand,CLIENT,0x6fb06037,E8 E4 FA FF FF
+D2Client 0x56098 is CALL operand,CLIENT,0x6fb06097,E8 84 FA FF FF
