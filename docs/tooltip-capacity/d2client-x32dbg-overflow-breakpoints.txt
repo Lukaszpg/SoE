@@ -1,0 +1,72 @@
+bp D2Client.dll+0x55CD5
+bpcnd D2Client.dll+0x55CD5, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55DFC
+bpcnd D2Client.dll+0x55DFC, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55E04
+bpcnd D2Client.dll+0x55E04, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55E1D
+bpcnd D2Client.dll+0x55E1D, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55ED2
+bpcnd D2Client.dll+0x55ED2, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55EDA
+bpcnd D2Client.dll+0x55EDA, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55EE0
+bpcnd D2Client.dll+0x55EE0, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x55EF3
+bpcnd D2Client.dll+0x55EF3, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x93B1F
+bpcnd D2Client.dll+0x93B1F, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x93B7D
+bpcnd D2Client.dll+0x93B7D, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x93B85
+bpcnd D2Client.dll+0x93B85, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x93B92
+bpcnd D2Client.dll+0x93B92, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x9426F
+bpcnd D2Client.dll+0x9426F, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94285
+bpcnd D2Client.dll+0x94285, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x9429B
+bpcnd D2Client.dll+0x9429B, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x942B4
+bpcnd D2Client.dll+0x942B4, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x942CD
+bpcnd D2Client.dll+0x942CD, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x942E6
+bpcnd D2Client.dll+0x942E6, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x942FF
+bpcnd D2Client.dll+0x942FF, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94315
+bpcnd D2Client.dll+0x94315, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x9432B
+bpcnd D2Client.dll+0x9432B, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94341
+bpcnd D2Client.dll+0x94341, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94357
+bpcnd D2Client.dll+0x94357, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x9436D
+bpcnd D2Client.dll+0x9436D, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94383
+bpcnd D2Client.dll+0x94383, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94399
+bpcnd D2Client.dll+0x94399, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x943AF
+bpcnd D2Client.dll+0x943AF, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x943C5
+bpcnd D2Client.dll+0x943C5, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x943FE
+bpcnd D2Client.dll+0x943FE, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x944D5
+bpcnd D2Client.dll+0x944D5, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x944E2
+bpcnd D2Client.dll+0x944E2, "strlen(utf16(ecx,0x400))+strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x941E7
+bpcnd D2Client.dll+0x941E7, "strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94431
+bpcnd D2Client.dll+0x94431, "strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x94491
+bpcnd D2Client.dll+0x94491, "strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x944B3
+bpcnd D2Client.dll+0x944B3, "strlen(utf16(edx,0x1000))>=0x400"
+bp D2Client.dll+0x944C8
+bpcnd D2Client.dll+0x944C8, "strlen(utf16(edx,0x1000))>=0x400"
