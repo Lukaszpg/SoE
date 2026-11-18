@@ -113,5 +113,6 @@ The current PR only prepares BH safely:
 - [Original instruction-byte verification sample](binary-verification-sites.csv)
 - [D2Client candidate call-site map](d2client-callsite-map.csv)
 - [D2Client *debugger-only* conditional breakpoints](d2client-x32dbg-overflow-breakpoints.txt)
+- [Read-only Python SHA-256 and 34-site instruction-byte verifier](verify_tooltip_manifest.py)
 
-The CSVs are read-only research artifacts. **Do not** apply patch sites or treat x32dbg probes as a production hotfix. All addresses and byte checks are build-specific.
+The CSVs and verifier are read-only research artifacts. Run `python verify_tooltip_manifest.py <path-to-ProjectDiablo.dll>` from the same directory as the CSV to validate the original binary; the tool never patches it. **Do not** apply patch sites or treat x32dbg probes as a production hotfix. All addresses and byte checks are build-specific.
